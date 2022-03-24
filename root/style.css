@@ -197,6 +197,19 @@ img {
   width: 100%;
 }
 
+.col_color {
+  display: table-cell;
+  padding: 10px;
+  width: 20%;
+  height: 50px;
+  border-radius: 5px;
+  border-color: black;
+  border-width: 2px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-style: solid;
+}
+
 .column_images_side_by_side {
   float: left;
   width: 25%;
@@ -247,6 +260,7 @@ hr {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  margin-bottom: 10px;
 }
 
 h1 {
