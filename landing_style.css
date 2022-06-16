@@ -34,6 +34,8 @@ a.btn {
 a.btn-first {
   background-color: #126fb2;
   color: white;
+  font-size: 46px;
+  width: 70%;
 }
 
 .btn-first:hover {
@@ -62,10 +64,11 @@ i:hover {
 }
 
 .heading-text {
-  font-size: 72px;
+  font-size: 96px;
   font-family: lobsterFont;
   color: #126fb2;
   text-align: center;
+  animation: fadeIn 5s;
 }
 
 .heading-text-features {
@@ -75,9 +78,15 @@ i:hover {
   text-align: center;
 }
 
-p {
-  font-size: 24px;
+.p-heading {
+  font-size: 36px;
+  color: orange;
+  text-align: center;
+}
+
+.p-features {
   font-family: lobsterFont;
+  font-size: 24px;
   color: orange;
   text-align: center;
 }
@@ -107,5 +116,48 @@ p {
   color: black;
 }
 
-.card-role {
+.fade-in-animation {
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.slide-in-from-right {
+  animation-duration: 2s;
+  animation-name: slideinFromRight;
+}
+
+.slide-in-from-left {
+  animation-duration: 2s;
+  animation-name: slideinFromLeft;
+}
+
+@keyframes slideinFromRight {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slideinFromLeft {
+  from {
+    margin-right: 0%;
+    width: 0%;
+  }
+  to {
+    margin-right: 100%;
+    width: 100%;
+  }
 }
