@@ -128,36 +128,3 @@ i:hover {
     opacity: 1;
   }
 }
-
-.slide-in-from-right {
-  animation-duration: 2s;
-  animation-name: slideinFromRight;
-}
-
-.slide-in-from-left {
-  animation-duration: 2s;
-  animation-name: slideinFromLeft;
-}
-
-@keyframes slideinFromRight {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-@keyframes slideinFromLeft {
-  from {
-    margin-right: 0%;
-    width: 0%;
-  }
-  to {
-    margin-right: 100%;
-    width: 100%;
-  }
-}
